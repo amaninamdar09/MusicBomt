@@ -21,10 +21,10 @@ Use the buttons below to know more about me.""",
                 ],
                 [
                     InlineKeyboardButton(
-                        "My CREATOR ☺️", url="https://t.me/OfficiaI_Arsh_Owner"
+                        "My CREATOR ☺️", url="https://t.me/teamdanishbaba"
                     ),
                     InlineKeyboardButton(
-                        "Add Me To Group", url="https://t.me/ARSH_VC_BOT?startgroup=true"
+                        "Add Me To Group", url="https://t.me/danishbabamusic_bot?startgroup=true"
                     )
                 ]
             ]
