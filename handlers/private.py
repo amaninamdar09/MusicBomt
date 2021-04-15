@@ -10,8 +10,9 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋🏻 Hi {message.from_user.first_name}!</b>
-I am Music Player, an open-source bot that lets you play music in your Telegram groups.
-Use the buttons below to know more about me.""",
+I am a powerful VC music bot of @idanishbaba😁. I am play the musics in your group's VC.
+TO PLAY MUSIC ADD ME YOUR GROIP AND PROMOTE ME.
+Also add @danishbabamusic.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -21,17 +22,18 @@ Use the buttons below to know more about me.""",
                 ],
                 [
                     InlineKeyboardButton(
-                        "My CREATOR ☺️", url="https://t.me/teamdanishbaba"
+                        "My CREATOR ☺️", url="https://t.me/idanishbaba"
                     ),
                     InlineKeyboardButton(
                         "Add Me To Group", url="https://t.me/danishbabamusic_bot?startgroup=true"
+                    ),
+                    
+                    InlineKeyboardButton(
+                         "Music World", url="https://t.me/joinchat/mkc8fNQ6dtUzZDll"
+    
                     )
-                ]
-            ]
-        )
-    )
 
-
+              ]
 @Client.on_message(
     filters.command("start")
     & filters.group
