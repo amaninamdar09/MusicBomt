@@ -61,7 +61,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="https://telegra.ph/file/23b4ee75d4f6919d80e4a.jpg",
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {}!".format(
+        caption="🎛️ **Playing** here the song requested by {}! \nKitna song sunte ho \npadai likhai kro IAS WAIS bano🤭".format(
         message.from_user.mention()
         ),
     )
