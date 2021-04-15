@@ -27,9 +27,9 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="😎 Danish Op 😁🔥",
-                        url="https://t.me/teamdanishbaba")
-                   
+                        text="🔥 Danish Op 🔥",
+                        url="https://t.me/idanishbaba",
+                        photo="https://telegra.ph/file/2d48cf08f9f2466348382.jpg")
                 ]
             ]
         )
