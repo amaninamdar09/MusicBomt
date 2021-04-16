@@ -19,7 +19,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing** sounds...")
+    lel = await message.reply("🔄 **Sabar kar** thodasa...")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -27,7 +27,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="😎 Danish OP 😁🔥",
+                        text="🔥 DANISH OP 🔥",
                         url="https://t.me/idanishbaba")
                    
                 ]
@@ -40,7 +40,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"❌ Videos longer than {DURATION_LIMIT} minute(s) mai nhi play karta ja..🙄!"
             )
 
         file_name = get_file_name(audio)
@@ -51,7 +51,7 @@ async def play(_, message: Message):
     elif url:
         file_path = await converter.convert(youtube.download(url))
     else:
-        return await lel.edit_text("❗ You did not give me anything to play!")
+        return await lel.edit_text(" abey kuch de to sahi play karne..🙄")
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
